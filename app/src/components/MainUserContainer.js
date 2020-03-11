@@ -6,8 +6,9 @@ class MainUserContainer extends React.Component {
         return (
             <div>
                 <h2>Hello World!</h2>
-                <h2>Meet Github User</h2>
-                <Usercard />
+        <h2>Meet Github User</h2>
+       
+                <Usercard data={this.props.data} />
             </div>
         )
     }

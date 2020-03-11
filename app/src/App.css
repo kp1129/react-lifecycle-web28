@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  background-color: #80808038;
 }
 
 form {
@@ -10,13 +11,25 @@ form {
   align-items: flex-end;
 }
 
+.main-user {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.followers-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
 .followers {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
 .follower-card {
-  width: 250px;
+  width: 300px;
   margin: 20px;
 }
 

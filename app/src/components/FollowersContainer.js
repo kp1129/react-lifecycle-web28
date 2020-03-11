@@ -24,7 +24,7 @@ class FollowersContainer extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className="followers-container">
                 <h2>Followers</h2>
                 <div className="followers">
                 {this.state.followers.map(user => <FollowerCard data={user} />)}

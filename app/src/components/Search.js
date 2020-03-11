@@ -1,4 +1,6 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 class Search extends React.Component {
     constructor(){
@@ -16,15 +18,14 @@ class Search extends React.Component {
         e.preventDefault();
         console.log('submit fired')
         this.props.searchUser(this.state.searchQuery);
+        this.setState({searchQuery: ""});
     }
 
     render(){
         return (
             <form onSubmit={this.handleSubmit}>
-            <label htmlFor="search">
-                {console.log(this.state.searchQuery)}
-            <input onChange={this.handleChange} id="search" name="search" type="text" value={this.state.searchQuery} placeholder="search github users"/>
-            </label>
+            <TextField variant="filled" onChange={this.handleChange} id="search" name="search" type="text" value={this.state.searchQuery} label="search github users"/>
+            <Button variant="contained" color="primary" type="submit">Search</Button>
             </form>
         )
     }

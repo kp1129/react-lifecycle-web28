@@ -1,5 +1,13 @@
+
+
 .App {
   text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .followers {

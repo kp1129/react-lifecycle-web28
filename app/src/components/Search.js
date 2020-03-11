@@ -16,7 +16,6 @@ class Search extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log('submit fired')
         this.props.searchUser(this.state.searchQuery);
         this.setState({searchQuery: ""});
     }

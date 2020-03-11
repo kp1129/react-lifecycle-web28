@@ -1,5 +1,3 @@
-
-
 .App {
   text-align: center;
   background-color: #80808038;
@@ -12,8 +10,16 @@ form {
 }
 
 .main-user {
-  width: 400px;
+  width: 300px;
   margin: 0 auto;
+}
+.main-user img {
+  height: 300px;
+}
+
+.react-github-calendar__title.styles_title__HcRKb {
+  margin-top: 10px;
+  border-bottom: none !important;
 }
 
 .followers-container {
@@ -29,40 +35,10 @@ form {
 }
 
 .follower-card {
-  width: 300px;
   margin: 20px;
 }
 
 .follower-card-img {
-  width: 100%;
+  height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

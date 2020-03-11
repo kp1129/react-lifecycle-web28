@@ -25,18 +25,20 @@ class App extends React.Component {
       .catch(err => console.log(err));
   }
 
-  componentDidUpdate() {
-    axios
+  componentDidUpdate(prevProps, prevState) {
+    if(prevState.searchUsername !== this.state.searchUsername){
+      axios
       .get(`https://api.github.com/users/${this.state.searchUsername}`)
       .then(res => this.setState({ mainUser: res.data }))
       .catch(err => console.log(err));
+    }
   }
 
-  render() {
+   render() {
     return (
       <div className="App">
         <Search searchUser={this.searchUser} />
-        <MainUserContainer data={this.state.mainUser} />
+        <MainUserContainer data={this.state.mainUser} />        
         <FollowersContainer user={this.state.searchUsername} />
       </div>
     );

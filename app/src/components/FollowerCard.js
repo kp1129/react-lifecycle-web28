@@ -6,8 +6,7 @@ class FollowerCard extends React.Component {
     return (
       <Card className="follower-card">
         <img className="follower-card-img" src={this.props.data.avatar_url} alt={this.props.data.login} />
-        <h3>Username: {this.props.data.login}</h3>
-        <p>URL: {this.props.data.html_url}</p>
+        <p>Username: <br/> {this.props.data.login}</p>
       </Card>
     );
   }

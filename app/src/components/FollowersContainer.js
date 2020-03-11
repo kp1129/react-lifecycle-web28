@@ -16,11 +16,14 @@ class FollowersContainer extends React.Component {
             .catch(err => console.log(err));
     }
 
-    componentDidUpdate(){
-        axios.get(`https://api.github.com/users/${this.props.user}/followers`)
+    componentDidUpdate(prevProps, prevState){
+        if(prevProps.user !== this.props.user){
+            axios.get(`https://api.github.com/users/${this.props.user}/followers`)
           .then(res => this.setState({followers: res.data}))
           .catch(err => console.log(err));
       }
+        }
+        
 
     render(){
         return (

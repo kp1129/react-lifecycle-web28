@@ -2,9 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.followers {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.follower-card {
+  width: 250px;
+  margin: 20px;
+}
+
+.follower-card-img {
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {

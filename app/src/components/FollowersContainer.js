@@ -16,11 +16,19 @@ class FollowersContainer extends React.Component {
             .catch(err => console.log(err));
     }
 
+    componentDidUpdate(){
+        axios.get(`https://api.github.com/users/${this.props.user}/followers`)
+          .then(res => this.setState({followers: res.data}))
+          .catch(err => console.log(err));
+      }
+
     render(){
         return (
             <div>
                 <h2>Followers</h2>
-               {this.state.followers.map(user => <FollowerCard data={user} />)}
+                <div className="followers">
+                {this.state.followers.map(user => <FollowerCard data={user} />)}
+                </div>               
             </div>
         )
     }

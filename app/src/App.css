@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  background-color: #80808038;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.main-user {
+  width: 300px;
+  margin: 0 auto;
+}
+.main-user img {
+  height: 300px;
+}
+
+.react-github-calendar__title.styles_title__HcRKb {
+  margin-top: 10px;
+  border-bottom: none !important;
+}
+
+.followers-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.followers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.follower-card {
+  margin: 20px;
+}
+
+.follower-card-img {
+  height: 200px;
+}
+
